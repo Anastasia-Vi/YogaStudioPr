@@ -1,0 +1,22 @@
+{
+    "background_color": "#2d3436",    
+    "theme_color": "#2d3436",
+    "name": "Card Game",    
+    "short_name": "Game 101",
+    "display": "standalone",    
+    "orientation": "any",
+    "start_url": "/",    
+    "scope": "/",
+    "icons": [
+        {            
+        "src": "photo2.png",
+        "sizes": "192x192",            
+        "type": "image/png"
+        },
+        {
+        "src": "photo3.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }        
+    ]
+}
