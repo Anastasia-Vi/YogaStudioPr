@@ -24,7 +24,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
     </Row>
 </div>
 <div class="container">
-        <Row>
+        <Row noMargin>
             <Grid>
                 <Card col={4}>
                     <div class="section2">
@@ -67,7 +67,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
         justify-content: left;
     }
     .section1{
-        margin: 10rem 0;
+        margin: 13rem 0;
         width: 35%;
         text-align: left;
         font-family: 'Lato', sans-serif;
@@ -123,6 +123,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
     background-image: url(/girl2.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size:cover;
    
     }
     .styles{
