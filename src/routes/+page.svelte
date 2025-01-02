@@ -23,6 +23,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
         </Grid>
     </Row>
 </div>
+<div class="container">
         <Row>
             <Grid>
                 <Card col={4}>
@@ -37,7 +38,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
                 </Card>
             </Grid>
         </Row>
-            
+</div>  
         
             <Card>
                 <div class="section3">
