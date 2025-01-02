@@ -5,7 +5,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
 
 </script>
 
-<div class="container">
+<div class="container hero">
     <Row noMargin>
         <Grid>
             <Card>
@@ -17,9 +17,6 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
                             <button class="join">Join Class Today</button>
                             <button class="learn">Learn more</button>
                         </div>
-                    </div>
-                    <div class="hero">
-                        <img src="girl2.png" alt="yoga"/>
                     </div>
                 </div>
             </Card>
@@ -114,9 +111,10 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
         color:var(--secondary);  
     }
     .hero{
-        max-width: 100%;
-    margin: 5rem 0;
-    z-index: 1;
+    background-image: url(girl2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   
     }
     .styles{
         font-size: 2.8rem;
