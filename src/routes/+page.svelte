@@ -20,19 +20,25 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
                     </div>
                 </div>
             </Card>
-            <Card col={4}>
-                <div class="section2">
-                <h1 class="styles">Many Styles Of Yoga To Suit Everyone</h1>
-                <p>Morbi lobortis morbi dignissim sodales eget mauris turpis interdum sagittis sed cursus nunc nulla congue quis.</p>
-                <button>Learn more</button>
-                </div>
-            </Card>
-            <Card col={8}>
-                <Typeofyoga></Typeofyoga>
-            </Card>
         </Grid>
     </Row>
-    </div>
+</div>
+        <Row>
+            <Grid>
+                <Card col={4}>
+                    <div class="section2">
+                    <h1 class="styles">Many Styles Of Yoga To Suit Everyone</h1>
+                    <p>Morbi lobortis morbi dignissim sodales eget mauris turpis interdum sagittis sed cursus nunc nulla congue quis.</p>
+                    <button>Learn more</button>
+                    </div>
+                </Card>
+                <Card col={8}>
+                    <Typeofyoga></Typeofyoga>
+                </Card>
+            </Grid>
+        </Row>
+            
+        
             <Card>
                 <div class="section3">
                     <video width="1080" height="720" controls>
@@ -60,6 +66,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
         justify-content: left;
     }
     .section1{
+        margin: 10rem 0;
         width: 35%;
         text-align: left;
         font-family: 'Lato', sans-serif;
@@ -110,7 +117,7 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
         color:var(--secondary);  
     }
     .hero{
-    background-image: url(girl2.png);
+    background-image: url(/girl2.png);
     background-position: center;
     background-repeat: no-repeat;
    
