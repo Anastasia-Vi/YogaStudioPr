@@ -58,3 +58,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+:root {  
+  --primary: #f6f4f2;
+  --secondary: #cb9274;
+  --text:#1a1a1a;
+  
+}
+

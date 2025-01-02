@@ -1,0 +1,1 @@
+export { default as Typeofyogashort } from "./typeofyogashort/Typeofyogashort.svelte"
