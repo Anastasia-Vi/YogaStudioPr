@@ -112,6 +112,8 @@ import {Typeofyoga} from "$lib/ui/Typeofyoga"
         border: none;
         padding: 0.5rem;;
         margin: auto 0;
+        background: transparent;
+
     }
     .learn:hover{
         color:var(--secondary);  
