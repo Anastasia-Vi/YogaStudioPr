@@ -1,6 +1,7 @@
         <div class="yoga-block">
             <slot />
         </div>
+      
           
         <style>
             .yoga-block {

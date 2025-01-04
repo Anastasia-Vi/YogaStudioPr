@@ -47,7 +47,7 @@
    <style>
     .yoga-list{
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+      grid-template-columns: repeat(2, 1fr); /* Two equal columns*/
       gap: 12px;
      }
      strong {

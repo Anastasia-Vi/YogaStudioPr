@@ -2,6 +2,8 @@
   import { Card, Grid, Row } from "$lib/ui/Grid";
   import { Direction } from "$lib/ui/Direction";
   import { Typeofyoga } from "$lib/ui/Typeofyoga";
+  import { Yogainstr } from "$lib/ui/Yogainstr";
+  import { Instructors } from "$lib/ui/Instructors";
 
   const socialLinks = [
     {
@@ -37,7 +39,7 @@
             </p>
             <div class="btn2">
               <button class="join">Join Class Today</button>
-              <button class="learn">Learn More</button>
+              <button class="learn">Learn More <i class="ri-arrow-right-long-line"></i></button>
             </div>
           </div>
         </div>
@@ -81,18 +83,13 @@
   </Row>
 </div>
 
-<Row noMargin>
-  <Grid>
-    <Card>
+
       <div class="section3">
-        <video width="1080" height="720" controls>
-          <track kind="captions" />
-          <source src="/video1.mp4" type="video/mp4" />
-        </video>
+        <div class="play">
+          <i class="ri-play-fill"></i>
+        </div>
       </div>
-    </Card>
-  </Grid>
-</Row>
+    
 
 <div class="container">
   <Row noMargin>
@@ -101,9 +98,9 @@
         <h4>Our Studio</h4>
         <div class="address">
           <h2>Yoga Studio in the City of New York</h2>
-          <p>123 5th Avenue, New York, NY 12004, USA.</p>
+          <p><i class="ri-map-pin-line"></i> 123 5th Avenue, New York, NY 12004, USA.</p>
           <a href={location} target="_blank" rel="noopener noreferrer">
-            <button class="btn4"> Find Us On Map </button>
+            <button class="btn4"> Find Us On Map <i class="ri-external-link-fill"></i> </button>
           </a>
         </div>
       </Card>
@@ -129,6 +126,65 @@
   </Row>
 </div>
 
+<div class="container">
+  <Row noMargin>
+    <Grid>
+      <Card>
+        <h3 class="instructors">Yoga Instructors</h3>
+        <Yogainstr></Yogainstr>
+      </Card>
+    </Grid>
+  </Row>
+</div>
+
+<div class="container4">
+  <Row noMargin>
+    <Grid>
+      <Card col={6}>
+        <div class="section4">
+          <img src="/girl8.png" alt = "girl8"/>
+        </div>
+      </Card>
+      <Card col={6}>
+        <div class="reviews">
+          <strong>Featured Reviews</strong>
+          <h3>Yoga Studio Like No Others!</h3>
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <p>“Aliquam faucibus scelerisque odio aliquet platea scelerisque in metus nunc nunc nisl lacus, nec dignissim et, ultricies vitae suspendisse massa egestas 
+            velit in massa eget nulla pharetra tortor sagittis sagittis massa nec.”</p>
+          <div class="inforeviews">
+            <strong>Jessica Lim</strong>
+            <button class="learn">View All Review <i class="ri-arrow-right-long-line"></i></button>
+          </div>
+        </div>
+      </Card>
+    </Grid>
+  </Row>
+</div>
+<div class="container5">
+  <Row noMargin>
+    <Grid>
+      <Card col={4}>
+        <h4>Our Certification</h4>
+      </Card>
+      <Card col={8}>
+        <div class="logos">
+          <img src="/logo1.png" alt = "logo1"/>
+          <img src="/logo2.png" alt = "logo2"/>
+          <img src="/logo3.png" alt = "logo3"/>
+          <img src="/logo4.png" alt = "logo4"/>
+        </div>
+      </Card>
+    </Grid>
+  </Row>
+</div>  
+
 <style>
   .container1 {
     display: flex;
@@ -141,11 +197,41 @@
     justify-content: space-around;
   }
   .section3 {
-    width: 100%;
-    margin: 0 auto;
-    padding-inline-start: 0;
-    padding-inline-end: 0;
-    height: 100%;
+    background-image: url(/yogavideo.png);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .play{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover{
+        background-color:var(--primary);
+      }
+      i{
+        color:var(--primary);
+        font-size: 3rem;
+        &:hover{
+          color:#1a1a1a;
+        }
+      }
+    }
+  }
+  
+  .icon{
+    background-image: url(/icon1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  
   }
   .btn2 {
     display: flex;
@@ -176,10 +262,16 @@
     color: var(--secondary);
   }
   .hero {
-    background-image: url(/girl2.png);
+    background-image: url(/girl7.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+  }
+
+  .container4 {
+  display: flex;
+   flex-direction: row-reverse;
+   background-color: var(--secondary);
   }
   .styles {
     font-size: 2rem;
@@ -233,4 +325,52 @@
     margin: 1.5rem 0;
     width: 100%;
   }
+  .text{
+    margin-top: 2rem;
+    margin-left: 6rem;
+  }
+  .instructors{
+   text-align: center;
+   margin-bottom: 4rem;
+  }
+  .logos{
+    display: flex;
+    justify-content: space-between;
+  }
+  .container5{
+  padding: 2rem 0;
+  }
+  .ri-map-pin-line{
+    color: var(--secondary);
+  }
+  .ri-star-fill{
+    color: var(--primary);
+  }
+  .reviews{
+    strong{
+      &::selection{
+        background: transparent;
+        color:var(--primary);
+      }
+    }
+    p{
+    color: #1a1a1a;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 3rem 0
+    }
+  }
+  .inforeviews{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem 0;
+    strong{
+      text-transform: uppercase;
+      font-family: "Prata", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+      
+    }
+  }
+ 
 </style>

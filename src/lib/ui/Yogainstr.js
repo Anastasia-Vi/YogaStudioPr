@@ -1,0 +1,1 @@
+export { default as Yogainstr } from "./yogainstr/Yogainstr.svelte"

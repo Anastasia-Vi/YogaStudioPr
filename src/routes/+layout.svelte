@@ -4,6 +4,7 @@
     import '../app.css';
     import '@fontsource/prata';
     import '@fontsource/lato';
+    import 'remixicon/fonts/remixicon.css'
 </script>
 <Header />
 <slot />
