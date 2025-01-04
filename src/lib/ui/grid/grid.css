@@ -805,7 +805,7 @@
   border: 1px solid var(--secondary);
 }
 
-.card h2{
+/*.card h2{
   font-size: var(--font-size-lg);
 }
 
@@ -818,7 +818,7 @@
 
 .card .incidenza{
   font-size: var(--font-size-xs);
-}
+}*/
 
 .card.no-border{
   border: 0 !important;

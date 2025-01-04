@@ -1,7 +1,6 @@
 <script>
     import { Card, Grid, Row } from "$lib/ui/Grid";
-    import '@fontsource/prata';
-    import '@fontsource/lato';
+    
     const navMenu = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
@@ -15,7 +14,9 @@
     <Row noMargin>
         <Grid>
             <Card col={2}>
-                <h1>MillieYoga</h1>
+               <div class="logo">
+                MillieYoga
+               </div>    
             </Card>
             <Card col={10}>
                 <div class="navMenu">
@@ -41,10 +42,8 @@
 <style>
     /* prata-latin-400-normal */
     
-    h1{
+    .logo{
         font-size: 1.1rem;
-        color: var(--text);
-        font-family: 'Lato', sans-serif;
         font-weight: 700;
     }
     ul{
@@ -55,7 +54,6 @@
     a:link,a:visited {
         text-decoration: none;
         font-size: 1rem;
-        font-family: 'Lato', sans-serif;
         color: var(--text);
   }
     .navMenu{
@@ -73,8 +71,6 @@
         display: block;
         width: 18%;
         color:var(--primary);
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
         border-radius: 50px;
         border: none;
         background-color:var(--secondary);

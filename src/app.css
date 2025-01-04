@@ -61,7 +61,50 @@ select {
 :root {  
   --primary: #f6f4f2;
   --secondary: #cb9274;
-  --text:#1a1a1a;
+  --text:#5a5a5a;
+  --title:#1a1a1a;
   
+}
+body{
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+}
+h1, h2, h3, h4{
+  color:var(--title);
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+}
+h1{
+  line-height: 146px;
+  font-size: 104px;
+}
+h2{
+  line-height: 62px;
+  font-size: 48px;
+  margin: 2rem 0;
+}
+h3{
+  line-height: 42px;
+  font-size: 32px;
+  margin: 2rem 0 1rem 0;
+}
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.container{
+  background-color: var(--primary);
+  padding: 5rem 0;
+}
+p+p{
+  margin-top: 0.5rem;
 }
 
