@@ -107,4 +107,13 @@ h4 {
 p+p{
   margin-top: 0.7rem;
 }
+.social-links {
+  display: flex;
+  transition: transform 0.3s;
+  margin-left: 1rem;
+}
+
+.social-links:hover {
+  transform: scale(1.1);
+}
 

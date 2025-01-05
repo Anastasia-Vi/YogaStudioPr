@@ -22,3 +22,21 @@ const portraitStore = () => {
     return { subscribe }
 }
 export const portrait = portraitStore()
+
+export const socialLinks = [
+    {
+      icon: "/vk.svg",
+      label: "VK",
+      url: "https://vk.com/welcome.yoga",
+    },
+    {
+      icon: "whatsapp.svg",
+      label: "WhatsApp",
+      url: "https://wa.me/+79029417000",
+    },
+    {
+      icon: "/instagram.svg",
+      label: "Instagram",
+      url: "https://www.instagram.com/welcome.yoga?igsh=Z3VmZDZpbjB3Z3Nu",
+    },
+  ];

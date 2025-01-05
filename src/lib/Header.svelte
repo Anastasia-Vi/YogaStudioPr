@@ -13,7 +13,7 @@
 <div class="header">
     <Row noMargin>
         <Grid>
-            <Card col={2}>
+            <Card col={2} centerY> 
                <div class="logo">
                 MillieYoga
                </div>    
@@ -27,8 +27,7 @@
                         </li>
                     {/each}
                     </ul>
-                    <button class="btn">+1 123 456 78 90
-                    </button>
+                    <button class="btn">+1 123 456 78 90</button>
                 </div>
             </Card>
         </Grid>
@@ -60,6 +59,7 @@
         gap: 7rem;
         display: flex;
         justify-content: right;
+        align-items: center;
         
     }
     .header{

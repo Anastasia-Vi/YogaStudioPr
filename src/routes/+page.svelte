@@ -6,23 +6,8 @@
   import { Instructors } from "$lib/ui/Instructors";
   import { Classes } from "$lib/ui/Classes";
   import { Classslot } from "$lib/ui/Classslot";
-  const socialLinks = [
-    {
-      icon: "/vk.svg",
-      label: "VK",
-      url: "https://vk.com/welcome.yoga",
-    },
-    {
-      icon: "whatsapp.svg",
-      label: "WhatsApp",
-      url: "https://wa.me/+79029417000",
-    },
-    {
-      icon: "/instagram.svg",
-      label: "Instagram",
-      url: "https://www.instagram.com/welcome.yoga?igsh=Z3VmZDZpbjB3Z3Nu",
-    },
-  ];
+  import { socialLinks } from "$lib/stores/global";
+
   const location = "https://maps.app.goo.gl/GpSkUSr4dycsewxH8";
 </script>
 
@@ -193,7 +178,9 @@
         <h2>Popular Classes</h2>
         <div class="infoclasses">
           <p> Morbi lobortis morbi dignissim sodales eget mauris turpis interdum sagittis sed cursus nunc nulla congue quis. </p>
-          <button class="btn4">View All Classes</button>
+            <button class="btn4">View All Classes</button>
+          
+         
         </div>
       </Card>
       <Card>
@@ -203,17 +190,7 @@
   </Row>
 </div>
 
-<div class="section5">
-  <div class="mail">
-    <i class="ri-mail-fill"></i>
-  </div>
-  <h2>Subscribe To Our Newsletter</h2>
-  <p>Morbi lobortis morbi dignissim sodales eget mauris turpis interdum sagittis sed cursus nunc nulla congue quis.</p>
-  <div class="2bnt">
-    <input type="text" name="input" value="Email address" />
-    <button>Subscribe </button>
-  </div>
-</div>
+
 
 <style>
   .container1 {
@@ -233,6 +210,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    
     
     .play{
       width: 90px;
@@ -310,15 +289,7 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  .social-links {
-    transition: transform 0.3s;
-    margin-top: 40rem;
-    margin-left: 1rem;
-  }
-
-  .social-links:hover {
-    transform: scale(1.1);
-  }
+  
   .section2 {
     margin: 1.5rem 0;
     text-align: left;
@@ -378,6 +349,7 @@
   }
   .container5{
   padding: 2rem 0;
+  background-color: var(--primary);
   }
   .ri-map-pin-line{
     color: var(--secondary);
@@ -434,31 +406,13 @@
 .infoclasses{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  p{
+    width: 50%;
+  }
   button{
     width: 15%;
   }
 }
-.section5 {
-    background-image: url(/yogasection.png);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .mail{
-      width: 50px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: var(--secondary);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: all 0.5s;
-      i{
-        color:var(--primary);
-        font-size: 1.2rem;
-      }
-    }
-}
+
 </style>

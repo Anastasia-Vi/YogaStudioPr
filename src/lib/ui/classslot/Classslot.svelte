@@ -1,12 +1,13 @@
 
-        <div class="list-instructors">
+        <div class="list-classes">
           <slot />
         </div>
       
           
         <style>
-          .list-instructors{
+          .list-classes{
             margin-bottom: 8px;
             text-align: left;
+            width: 25%;
           }
       </style>
