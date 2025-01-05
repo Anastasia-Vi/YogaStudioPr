@@ -4,7 +4,8 @@
   import { Typeofyoga } from "$lib/ui/Typeofyoga";
   import { Yogainstr } from "$lib/ui/Yogainstr";
   import { Instructors } from "$lib/ui/Instructors";
-
+  import { Classes } from "$lib/ui/Classes";
+  import { Classslot } from "$lib/ui/Classslot";
   const socialLinks = [
     {
       icon: "/vk.svg",
@@ -160,7 +161,7 @@
             velit in massa eget nulla pharetra tortor sagittis sagittis massa nec.”</p>
           <div class="inforeviews">
             <strong>Jessica Lim</strong>
-            <button class="learn">View All Review <i class="ri-arrow-right-long-line"></i></button>
+            <button class="viewr">View All Review <i class="ri-arrow-right-long-line"></i></button>
           </div>
         </div>
       </Card>
@@ -184,6 +185,35 @@
     </Grid>
   </Row>
 </div>  
+
+<div class="container">
+  <Row noMargin>
+    <Grid>
+      <Card>
+        <h2>Popular Classes</h2>
+        <div class="infoclasses">
+          <p> Morbi lobortis morbi dignissim sodales eget mauris turpis interdum sagittis sed cursus nunc nulla congue quis. </p>
+          <button class="btn4">View All Classes</button>
+        </div>
+      </Card>
+      <Card>
+        <Classes></Classes>
+      </Card>
+    </Grid>
+  </Row>
+</div>
+
+<div class="section5">
+  <div class="mail">
+    <i class="ri-mail-fill"></i>
+  </div>
+  <h2>Subscribe To Our Newsletter</h2>
+  <p>Morbi lobortis morbi dignissim sodales eget mauris turpis interdum sagittis sed cursus nunc nulla congue quis.</p>
+  <div class="2bnt">
+    <input type="text" name="input" value="Email address" />
+    <button>Subscribe </button>
+  </div>
+</div>
 
 <style>
   .container1 {
@@ -270,8 +300,11 @@
 
   .container4 {
   display: flex;
-   flex-direction: row-reverse;
    background-color: var(--secondary);
+   justify-content: space-between;
+   padding: 4rem 0;
+   gap: 2rem;
+
   }
   .styles {
     font-size: 2rem;
@@ -306,12 +339,13 @@
   .btn4 {
     display: block;
     border-radius: 60px;
-    border: 3px solid;
+    border: 1px solid;
     background-color: var(--primary);
     padding: 0.5rem;
     margin-top: 2rem;
     border-color: var(--secondary);
     width: 35%;
+    color: var(--text);
   }
   .btn4:hover {
     background-color: var(--secondary);
@@ -324,6 +358,11 @@
   .address {
     margin: 1.5rem 0;
     width: 100%;
+    p{
+      color: #1a1a1a;
+      font-weight: 600;
+  
+    }
   }
   .text{
     margin-top: 2rem;
@@ -347,7 +386,16 @@
     color: var(--primary);
   }
   .reviews{
+    margin-top: 4rem;
     strong{
+      font-family: "Prata", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      
+      color: #1a1a1a;
       &::selection{
         background: transparent;
         color:var(--primary);
@@ -363,7 +411,7 @@
   .inforeviews{
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem 0;
+    
     strong{
       text-transform: uppercase;
       font-family: "Prata", sans-serif;
@@ -371,6 +419,46 @@
       letter-spacing: 0.2rem;
       
     }
+    button{
+    display: block;
+    color: #ffffff;
+    border: none;
+    background: transparent;
+    font-weight: 400;
+    &::selection{
+        background: transparent;
+        color:#1a1a1a;
+      }
   }
- 
+}
+.infoclasses{
+  display: flex;
+  justify-content: space-between;
+  button{
+    width: 15%;
+  }
+}
+.section5 {
+    background-image: url(/yogasection.png);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mail{
+      width: 50px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.5s;
+      i{
+        color:var(--primary);
+        font-size: 1.2rem;
+      }
+    }
+}
 </style>

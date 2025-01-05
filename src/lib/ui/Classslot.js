@@ -1,0 +1,1 @@
+export { default as Classslot } from "./classslot/Classslot.svelte"
