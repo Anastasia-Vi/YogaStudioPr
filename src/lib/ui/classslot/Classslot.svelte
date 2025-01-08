@@ -7,7 +7,7 @@
         <style>
           .list-classes{
             margin-bottom: 8px;
-            text-align: left;
             width: 25%;
-          }
+            text-align: left;
+    }
       </style>

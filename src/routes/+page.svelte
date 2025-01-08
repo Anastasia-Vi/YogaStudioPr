@@ -193,15 +193,25 @@
 
 
 <style>
+  .container{
+    .social-links{
+    flex-direction:column;
+    display: flex;
+    gap: 1rem;
+    margin-top: 40rem;
+  }
+}
   .container1 {
     display: flex;
     justify-content: left;
+  
   }
   .section1 {
     margin: 13rem 0;
     width: 35%;
     text-align: left;
     justify-content: space-around;
+
   }
   .section3 {
     background-image: url(/yogavideo.png);
@@ -350,6 +360,9 @@
   .container5{
   padding: 2rem 0;
   background-color: var(--primary);
+  h4{
+    padding-top: 0.5rem;
+  }
   }
   .ri-map-pin-line{
     color: var(--secondary);
@@ -397,21 +410,41 @@
     border: none;
     background: transparent;
     font-weight: 400;
-    &::selection{
+    &:hover{
+        background: transparent;
+        color:#1a1a1a;
+        font-weight: 600;
+      }
+      i{
+        &:hover{
         background: transparent;
         color:#1a1a1a;
       }
+    }
   }
 }
 .infoclasses{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  h2{
+    margin-bottom: 1rem;
+  }
   p{
-    width: 50%;
+    width: 48%;
   }
   button{
     width: 15%;
+  
+  &:hover{
+    color:#ffffff;
+  }
+}
+}
+
+.container{
+  h2{
+    margin-bottom: 1rem;
   }
 }
 
